@@ -1,7 +1,7 @@
 # Open file and set up vars
 
 lineLength = 31
-numOfLines = 322
+numOfLines = 323
 slope = [[0 for i in range(lineLength)] for j in range(numOfLines)] 
 
 position = 0
