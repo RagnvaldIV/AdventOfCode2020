@@ -1,14 +1,15 @@
 # Open file and set up vars
+inputTxt = open("Day 3/input.txt", "r")
 
-lineLength = 31
-numOfLines = 323
+# Read over file to get size of array
+lineLength = len(inputTxt.readline()) - 1
+numOfLines = len(inputTxt.readlines()) + 1
 slope = [[0 for i in range(lineLength)] for j in range(numOfLines)] 
 
 position = 0
 treeCount = [0, 0, 0, 0, 0]
 
-
-inputTxt = open("Day 3/input.txt", "r")
+inputTxt.seek(0, 0)
 # Import input as array
 for row in range(numOfLines):
     line = inputTxt.readline()
